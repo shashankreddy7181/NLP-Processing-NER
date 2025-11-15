@@ -1,4 +1,3 @@
-Here is your **fully formatted README.md** text in clean GitHub-style markdown:
 
 ---
 
