@@ -1,84 +1,104 @@
-# NLP-Processing-NER
+Here is your **fully formatted README.md** text in clean GitHub-style markdown:
 
-Student Info
+---
 
-Name: Shashank Reddy Dasari
-Student ID: 700781569
-Assignment: NLP Tokenization, Lemmatization, POS Filtering & NER
+# 📘 NLP-Processing-NER
 
-📖 Problem Statement
+## **Student Info**
+
+**Name:** Shashank Reddy Dasari
+**Student ID:** 700781569
+**Assignment:** NLP Tokenization, Lemmatization, POS Filtering & Named Entity Recognition (NER)
+
+---
+
+## 📖 **Problem Statement**
 
 Perform NLP preprocessing and entity extraction on given input texts.
 
 You must implement:
 
-Q1. Text Preprocessing
+### **Q1. Text Preprocessing**
 
-Tokenization
+* Tokenization
+* Stopword Removal
+* Lemmatization (no stemming)
+* Keep only **verbs and nouns** using POS tags
 
-Stopword removal
+### **Q2. Named Entity Recognition + Pronoun Ambiguity Detection**
 
-Lemmatization (no stemming)
+* Perform **Named Entity Recognition (NER)**
+* If the text contains a pronoun:
 
-Keep only verbs and nouns using POS tags
+  * **"he", "she", "they" → print a warning message"**
 
-Q2. Named Entity Recognition + Pronoun Ambiguity Detection
+✔ Note: All code must run **without spaCy** (Python 3.14 incompatible), so the implementation uses **NLTK only**.
 
-Perform Named Entity Recognition (NER)
+---
 
-If the text contains a pronoun ("he", "she", "they"), print a warning
+## 📝 **Q1 — Text Preprocessing**
 
-All code must run without spaCy (Python 3.14 incompatible), so the implementation uses NLTK only.
+### **Input Text**
 
-📝 Q1 — Text Preprocessing
-Input Text
+> *"John enjoys playing football while Mary loves reading books in the library."*
 
-"John enjoys playing football while Mary loves reading books in the library."
-
-Steps Performed
+### **Steps Performed**
 
 1️⃣ Tokenized the sentence into word tokens
 2️⃣ Removed English stopwords
-3️⃣ Applied WordNet lemmatization
-4️⃣ Filtered to keep only verbs and nouns
+3️⃣ Applied **WordNet lemmatization**
+4️⃣ Filtered tokens to keep only **verbs and nouns**
 5️⃣ Printed final processed tokens
 
-📝 Q2 — NER + Pronoun Ambiguity Detection
-Input Text
+---
 
-"Chris met Alex at Apple headquarters in California. He told him about the new iPhone launch."
+## 📝 **Q2 — NER + Pronoun Ambiguity Detection**
 
-Steps Performed
+### **Input Text**
+
+> *"Chris met Alex at Apple headquarters in California. He told him about the new iPhone launch."*
+
+### **Steps Performed**
 
 1️⃣ Tokenized the input text
-2️⃣ Applied NLTK POS tagging
-3️⃣ Performed Named Entity Recognition (PERSON, GPE, ORGANIZATION)
-4️⃣ Checked for pronouns (“he”, “she”, “they”)
-5️⃣ Printed a warning message if ambiguity detected
+2️⃣ Applied NLTK **POS tagging**
+3️⃣ Performed **Named Entity Recognition (NER)**
 
-📈 Results Summary
-✔ Q1 Output
+* PERSON
+* ORGANIZATION
+* GPE (Location)
+  4️⃣ Checked for pronouns: **he**, **she**, **they**
+  5️⃣ Printed a **warning** message if pronoun ambiguity detected
 
-Only nouns and verbs retained after preprocessing.
+---
+
+## 📈 **Results Summary**
+
+### ✔ **Q1 Output**
+
+Only **nouns and verbs** were retained after preprocessing.
 The pipeline successfully:
 
-removed stopwords
+* removed stopwords
+* lemmatized tokens
+* extracted verbs and nouns
 
-lemmatized tokens
+---
 
-extracted verbs and nouns
+### ✔ **Q2 Output**
 
-✔ Q2 Output
+NER detected the following entities:
 
-NER detected:
+| Entity     | Type         |
+| ---------- | ------------ |
+| Chris      | PERSON       |
+| Alex       | PERSON       |
+| Apple      | ORGANIZATION |
+| California | GPE          |
 
-Chris → PERSON
+Pronoun **"He"** was detected →
+⚠️ **Warning: Possible pronoun ambiguity detected!**
 
-Alex → PERSON
+---
 
-Apple → ORGANIZATION
-
-California → GPE
-
-Pronoun “He” was found →
-⚠️ Warning: Possible pronoun ambiguity detected!
+If you want, I can also generate this as a **.md file** for download.
