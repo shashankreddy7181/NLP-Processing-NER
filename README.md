@@ -102,4 +102,3 @@ Pronoun **"He"** was detected →
 
 ---
 
-If you want, I can also generate this as a **.md file** for download.
