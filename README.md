@@ -66,8 +66,10 @@ You must implement:
 
 * PERSON
 * ORGANIZATION
-* GPE (Location)     
-4️⃣ Checked for pronouns: **he**, **she**, **they**       
+* GPE (Location)
+
+4️⃣ Checked for pronouns: **he**, **she**, **they**
+
 5️⃣ Printed a **warning** message if pronoun ambiguity detected         
 
 ---
