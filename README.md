@@ -6,9 +6,9 @@ Here is your **fully formatted README.md** text in clean GitHub-style markdown:
 
 ## **Student Info**
 
-**Name:** Shashank Reddy Dasari
-**Student ID:** 700781569
-**Assignment:** NLP Tokenization, Lemmatization, POS Filtering & Named Entity Recognition (NER)
+**Name:** Shashank Reddy Dasari   
+**Student ID:** 700781569    
+**Assignment:** NLP Tokenization, Lemmatization, POS Filtering & Named Entity Recognition (NER)    
 
 ---
 
@@ -44,11 +44,11 @@ You must implement:
 
 ### **Steps Performed**
 
-1️⃣ Tokenized the sentence into word tokens
-2️⃣ Removed English stopwords
-3️⃣ Applied **WordNet lemmatization**
-4️⃣ Filtered tokens to keep only **verbs and nouns**
-5️⃣ Printed final processed tokens
+1️⃣ Tokenized the sentence into word tokens    
+2️⃣ Removed English stopwords    
+3️⃣ Applied **WordNet lemmatization**     
+4️⃣ Filtered tokens to keep only **verbs and nouns**   
+5️⃣ Printed final processed tokens    
 
 ---
 
@@ -60,15 +60,15 @@ You must implement:
 
 ### **Steps Performed**
 
-1️⃣ Tokenized the input text
-2️⃣ Applied NLTK **POS tagging**
-3️⃣ Performed **Named Entity Recognition (NER)**
+1️⃣ Tokenized the input text      
+2️⃣ Applied NLTK **POS tagging**       
+3️⃣ Performed **Named Entity Recognition (NER)**     
 
 * PERSON
 * ORGANIZATION
 * GPE (Location)
-  4️⃣ Checked for pronouns: **he**, **she**, **they**
-  5️⃣ Printed a **warning** message if pronoun ambiguity detected
+  4️⃣ Checked for pronouns: **he**, **she**, **they**     
+  5️⃣ Printed a **warning** message if pronoun ambiguity detected     
 
 ---
 
